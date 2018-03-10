@@ -48,13 +48,13 @@ public class DroidCardsView extends View {
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
-//        for (DroidCard c : mDroidCards){
-//            drawDroidCard(canvas, c);
-//        }
-        for (int i = 0; i < mDroidCards.size() - 1; i++) {
-            drawDroidCard(canvas, mDroidCards.get(i), i + 1);
+        for (DroidCard c : mDroidCards){
+            drawDroidCard(canvas, c);
         }
-        drawDroidCard(canvas, mDroidCards.get(mDroidCards.size() - 1));
+//        for (int i = 0; i < mDroidCards.size() - 1; i++) {
+//            drawDroidCard(canvas, mDroidCards.get(i), i + 1);
+//        }
+//        drawDroidCard(canvas, mDroidCards.get(mDroidCards.size() - 1));
 
 
         invalidate();
